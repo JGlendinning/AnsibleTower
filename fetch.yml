@@ -1,5 +1,5 @@
 
-  tasks:
+  -tasks:
     - name: Fetch ports.conf
       fetch: dest=save/ec-4610-05-lab-rack4/ports.conf src=/etc/cumulus/ports.conf flat=yes
 
