@@ -1,5 +1,7 @@
 ---
-- tasks:
+- hosts: EC-4610-05
+  become: yes
+  tasks:
     - name: Fetch ports.conf
       fetch: dest=save/{{ansible_hostname}}/ports.conf src=/etc/cumulus/ports.conf flat=yes
 
