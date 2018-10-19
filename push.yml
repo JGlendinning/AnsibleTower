@@ -1,0 +1,13 @@
+---
+- hosts: 10.50.1.115
+  become: yes
+  tasks:
+    - name: restore ports.conf
+      copy:
+        src=save/{{ansible_hostname}}/ports.conf
+        dest=/etc/cumulus/ports.conf
+    - name: restore interfaces
+      copy:
+        src=save/{{ansible_hostname}}/etc/network/interfaces
+        dst=/etc/network/interfaces
+        
