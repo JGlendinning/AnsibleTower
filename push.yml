@@ -8,6 +8,6 @@
         dest: /etc/cumulus/ports.conf
     - name: restore interfaces
       copy:
-        src: save/{{ansible_hostname}}/etc/network/interfaces
+        src: save/{{ansible_hostname}}/interfaces
         dest: /etc/network/interfaces
         
