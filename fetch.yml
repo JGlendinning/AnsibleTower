@@ -1,7 +1,8 @@
 
+---
+  -hosts: 10.50.1.115
   -tasks:
-    - name: Fetch ports.conf
+  - name: Fetch ports.conf
       fetch: dest=save/ec-4610-05-lab-rack4/ports.conf src=/etc/cumulus/ports.conf flat=yes
-
-    - name: Fetch interfaces Configuration
-      fetch: dest=save/ec-4610-05-lab-rack4/interfaces src=/etc/network/interfaces flat=yes
+  - name: Fetch interfaces Configuration
+    fetch: dest=save/ec-4610-05-lab-rack4/interfaces src=/etc/network/interfaces flat=yes
