@@ -1,5 +1,5 @@
 ---
-- hosts: ec-4610-05-lab-rack4:
+- hosts: ec-4610-05-lab-rack4
   become: yes
   tasks:
     - name: restore ports.conf
