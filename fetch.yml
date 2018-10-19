@@ -2,7 +2,7 @@
 - hosts: 10.50.1.115
   become: yes
   tasks:
-  - name: Fetch ports.conf
-  fetch: dest=save/{{ansible_hostname}}/ports.conf src=/etc/cumulus/ports.conf flat=yes
-  - name: Fetch interfaces Configuration
+    - name: Fetch ports.conf
+      fetch: dest=save/{{ansible_hostname}}/ports.conf src=/etc/cumulus/ports.conf flat=yes
+    - name: Fetch interfaces Configuration
       fetch: dest=save/{{ansible_hostname}}/interfaces src=/etc/network/interfaces flat=yes
